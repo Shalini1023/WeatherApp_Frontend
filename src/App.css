@@ -1,0 +1,40 @@
+@import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
+
+#animation {
+    text-transform: uppercase;
+    background-image: linear-gradient(-225deg,
+            #231557 0%,
+            #0000ff 29%,
+            #ff1361 67%,
+            #fff800 100%);
+    background-size: auto auto;
+    background-clip: border-box;
+    background-size: 200% auto;
+    color: #fff;
+    background-clip: text;
+    /* text-fill-color: transparent; */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: textclip 3s linear infinite;
+    /* display: inline-block; */
+    font-size: 30px;
+    text-align: center;
+}
+
+@keyframes textclip {
+    to {
+        background-position: 300% center;
+    }
+}
+
+/* Day mode */
+.day-mode {
+    background-color: #fff;
+    color: #000;
+}
+
+/* Night mode */
+.night-mode {
+    background-color: #000;
+    color: #fff;
+}
